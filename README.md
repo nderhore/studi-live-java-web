@@ -27,8 +27,8 @@ mvn -version
 
 - Clonez le repository
 ```bash
-git clone https://github.com/ton-utilisateur/mon-projet-springboot.git
-cd mon-projet-springboot
+git clone https://github.com/nderhore/studi-live-java-web.git
+cd studi-live-java-web
 ```
 
 - Lancez l'application
