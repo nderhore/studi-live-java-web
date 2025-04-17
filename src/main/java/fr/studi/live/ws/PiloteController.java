@@ -17,7 +17,7 @@ public class PiloteController {
     private PiloteService piloteService;
 
     @GetMapping
-    public ResponseEntity<Object> getAllpilote() {
+    public ResponseEntity<Object> getAllpilotes() {
         List<Pilote> maListe = piloteService.getAllPilote();
         return ResponseEntity.status(HttpStatus.OK)
                 .body(maListe);
