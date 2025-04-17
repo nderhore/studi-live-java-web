@@ -14,6 +14,9 @@ Avant de lancer le projet, assurez-vous d’avoir installé :
 - **Apache Maven 3.9 ou supérieur**  
   ➤ [Télécharger Maven](https://maven.apache.org/download.cgi)
 
+- **Docker**  
+  ➤ [Télécharger Docker](https://www.docker.com/products/docker-desktop/)
+
 - Un IDE comme **IntelliJ IDEA**, **Eclipse** ou **Visual Studio Code** (optionnel mais recommandé)
 
 Vérifiez vos versions avec les commandes suivantes :
@@ -29,6 +32,11 @@ mvn -version
 ```bash
 git clone https://github.com/nderhore/studi-live-java-web.git
 cd studi-live-java-web
+```
+
+- Demarrez la database en local via docker-compose
+```bash
+docker-compose up -d
 ```
 
 - Lancez l'application
