@@ -98,6 +98,21 @@
 		</dependency>
 	</dependencies>
 
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>docker</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+	</profiles>
+
 	<build>
 		<plugins>
 			<plugin>

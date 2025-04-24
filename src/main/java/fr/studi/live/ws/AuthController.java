@@ -30,7 +30,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("auth")
+@RequestMapping("/auth")
 public class AuthController {
 
     @Autowired
@@ -51,7 +51,7 @@ public class AuthController {
     @Autowired
     private RoleRepository roleRepository;
 
-    @PostMapping("/signin")
+    @PostMapping("/signin/")
     public ResponseEntity<Object> signin(@RequestBody LoginRequest loginRequest) {
 
         Authentication authentication = authenticationManager.authenticate(
@@ -73,7 +73,7 @@ public class AuthController {
         this.authService.changePassword(signupRequest);
     }
 
-    @PostMapping("/signup")
+    @PostMapping("/signup/")
     public ResponseEntity<Object> signup(@RequestBody SignupRequest signUpRequest) {
         if (userRepository.existsByUsername(signUpRequest.getUsername())) {
             return ResponseEntity
