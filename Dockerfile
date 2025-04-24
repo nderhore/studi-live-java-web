@@ -17,7 +17,7 @@ FROM eclipse-temurin:21.0.7_6-jre-alpine-3.21
 WORKDIR /app
 
 COPY --from=build /toto/target/*.war application.war
-
+ENV PORT 8080
 EXPOSE 8080
 
 #commande de lancement applicative
